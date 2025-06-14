@@ -17,7 +17,7 @@ A mobile-friendly static site that:
 - [Eleventy](https://www.11ty.dev/) (static site generator)
 - [Tailwind CSS](https://tailwindcss.com/) for styling
 - [GitHub Actions](https://github.com/features/actions) for automated deploy
-- [Action Network](https://actionnetwork.org/) for signups
+- [Action Network](https://actionnetwork.org/forms/join-street-singers-for-justice-nyc/) for signups
 
 ## 🧑‍💻 Local Development
 
