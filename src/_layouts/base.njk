@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} | Street Singers for Justice NYC</title>
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function toggleLyrics(id) {
+                const lyricsDiv = document.getElementById(id);
+                lyricsDiv.classList.toggle('hidden');
+            }
+            // Make toggleLyrics available globally
+            window.toggleLyrics = toggleLyrics;
+        });
+    </script>
 </head>
 <body class="min-h-screen bg-gray-50">
     <main class="container mx-auto px-4 py-8">

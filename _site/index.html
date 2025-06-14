@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Street Singers for Justice NYC | Street Singers for Justice NYC</title>
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function toggleLyrics(id) {
+                const lyricsDiv = document.getElementById(id);
+                lyricsDiv.classList.toggle('hidden');
+            }
+            // Make toggleLyrics available globally
+            window.toggleLyrics = toggleLyrics;
+        });
+    </script>
 </head>
 <body class="min-h-screen bg-gray-50">
     <main class="container mx-auto px-4 py-8">
@@ -15,11 +25,11 @@
     <div class="space-y-12 text-left">
         
         <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('somebody&#39;s-hurting-my-brother')">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-somebody&#39;s-hurting-my-brother')">
                 Somebody&#39;s Hurting My Brother
                 <span class="text-sm text-gray-500">(click to show/hide lyrics)</span>
             </h2>
-            <div id="somebody&#39;s-hurting-my-brother" class="hidden">
+            <div id="song-somebody&#39;s-hurting-my-brother" class="hidden">
                 
                 <p class="text-gray-600 mb-4">by Yara Allen</p>
                 
@@ -56,11 +66,11 @@
         </div>
         
         <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('singing-for-our-lives')">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-singing-for-our-lives')">
                 Singing For Our Lives
                 <span class="text-sm text-gray-500">(click to show/hide lyrics)</span>
             </h2>
-            <div id="singing-for-our-lives" class="hidden">
+            <div id="song-singing-for-our-lives" class="hidden">
                 
                 <p class="text-gray-600 mb-4">by Holly Near</p>
                 
@@ -83,11 +93,11 @@
         </div>
         
         <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('this-joy')">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-this-joy')">
                 This Joy
                 <span class="text-sm text-gray-500">(click to show/hide lyrics)</span>
             </h2>
-            <div id="this-joy" class="hidden">
+            <div id="song-this-joy" class="hidden">
                 
                 <p class="text-gray-600 mb-4">by Resistance Revival Chorus</p>
                 
@@ -122,11 +132,11 @@
         </div>
         
         <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('this-little-light-of-mine')">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-this-little-light-of-mine')">
                 This Little Light of Mine
                 <span class="text-sm text-gray-500">(click to show/hide lyrics)</span>
             </h2>
-            <div id="this-little-light-of-mine" class="hidden">
+            <div id="song-this-little-light-of-mine" class="hidden">
                 
                 <p class="text-gray-600 mb-4">by Traditional spiritual, adapted for justice</p>
                 
@@ -165,11 +175,11 @@
         </div>
         
         <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('we-get-there-together')">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-we-get-there-together')">
                 We Get There Together
                 <span class="text-sm text-gray-500">(click to show/hide lyrics)</span>
             </h2>
-            <div id="we-get-there-together" class="hidden">
+            <div id="song-we-get-there-together" class="hidden">
                 
                 <p class="text-gray-600 mb-4">by Joshua Blaine</p>
                 
@@ -198,11 +208,11 @@
         </div>
         
         <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('we-shall-not-be-moved')">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-we-shall-not-be-moved')">
                 We Shall Not Be Moved
                 <span class="text-sm text-gray-500">(click to show/hide lyrics)</span>
             </h2>
-            <div id="we-shall-not-be-moved" class="hidden">
+            <div id="song-we-shall-not-be-moved" class="hidden">
                 
                 <p class="text-gray-600 mb-4">by Traditional spiritual, adapted for justice</p>
                 
@@ -233,11 +243,11 @@
         </div>
         
         <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('we-shall-overcome')">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-we-shall-overcome')">
                 We Shall Overcome
                 <span class="text-sm text-gray-500">(click to show/hide lyrics)</span>
             </h2>
-            <div id="we-shall-overcome" class="hidden">
+            <div id="song-we-shall-overcome" class="hidden">
                 
                 <p class="text-gray-600 mb-4">by Traditional spiritual, adapted for civil rights</p>
                 
@@ -276,11 +286,11 @@
         </div>
         
         <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('woke-up-this-morning')">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-woke-up-this-morning')">
                 Woke Up This Morning
                 <span class="text-sm text-gray-500">(click to show/hide lyrics)</span>
             </h2>
-            <div id="woke-up-this-morning" class="hidden">
+            <div id="song-woke-up-this-morning" class="hidden">
                 
                 <p class="text-gray-600 mb-4">by Traditional spiritual, adapted by Rev. Robert Osby</p>
                 
