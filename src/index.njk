@@ -59,11 +59,11 @@ songs:
     <div class="space-y-12 text-left">
         {% for song in songs %}
         <div class="mb-8">
-            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-{{ song.title | slug }}')">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer hover:text-blue-600 transition-colors" onclick="toggleLyrics('song-{{ song.title | replace("'", "") | slug }}')">
                 {{ song.title }}
                 <span class="text-sm text-gray-500">(click to show/hide lyrics)</span>
             </h2>
-            <div id="song-{{ song.title | slug }}" class="hidden">
+            <div id="song-{{ song.title | replace("'", "") | slug }}" class="hidden">
                 {% if song.author %}
                 <p class="text-gray-600 mb-4">by {{ song.author }}</p>
                 {% endif %}
