@@ -4,7 +4,7 @@
   "description": "This is the source code for the public rally site of **Street Singers for Justice NYC**, a grassroots choir confronting fossil-fueled fascism and singing out for justice, dignity, and collective liberation.",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve & npx tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --watch --postcss",
+    "start": "concurrently \"eleventy --serve\" \"npx tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --watch --postcss\"",
     "build": "eleventy && npx tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --minify --postcss"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "postcss": "^8.5.5"
   },
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "tailwindcss": "^3.4.1"
   }
 }
